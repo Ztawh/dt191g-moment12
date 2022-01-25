@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "dt191g-moment12-empty/1.0.0": {
+        "runtime": {
+          "dt191g-moment12-empty.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "dt191g-moment12-empty/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

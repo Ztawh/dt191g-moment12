@@ -1,0 +1,54 @@
+@import "_Base";
+//@import "_Layout";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background: antiquewhite;
+}
+
+header {
+  padding: 3rem 2rem;
+}
+
+#date {
+  margin-left: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+aside {
+  border: solid 1px black;
+  padding: 2rem;
+  
+  ul {
+    list-style-type: none;
+    
+    li {
+      text-align: center;
+    }
+  }
+  
+  a {
+    padding: 0.5rem;
+    text-decoration: none;
+    //text-align: center;
+  }
+}

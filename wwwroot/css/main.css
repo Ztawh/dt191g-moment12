@@ -1,0 +1,49 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  background: antiquewhite;
+}
+
+header {
+  padding: 3rem 2rem;
+}
+
+#date {
+  margin-left: auto;
+}
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+aside {
+  border: solid 1px black;
+  padding: 2rem;
+}
+aside ul {
+  list-style-type: none;
+}
+aside ul li {
+  text-align: center;
+}
+aside a {
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

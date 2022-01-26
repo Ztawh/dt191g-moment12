@@ -1,3 +1,9 @@
+@{
+    DateTime dateTime = DateTime.Now;
+    string date = dateTime.ToString("yyyy-MM-dd");
+    
+}
+
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -7,28 +13,30 @@
     <link rel="stylesheet" href="css/main.css"/>
 </head>
 <body>
-<header class="flex">
-    <div>Logga</div>
-    
-    @{
-        DateTime date = DateTime.Now;
-    }
-    
-    <div id="date">@date</div>
-</header>
-<div class="container flex">
-    <aside>
-        <ul>
-            <li><a href="/">Hem</a></li>
-            <li><a href="/Razor">Razor</a></li>
-            <li><a href="/About">Om sidan</a></li>
-        </ul>
-    </aside>
-    <main>
-        @RenderBody()
-    </main>
+<div class="super-container">
+    <header class="flex">
+        <div id="logo"><a href="/"><i class="fas fa-ghost"></i></a></div>
+        <div id="date">Dagens datum är: @date </div>
+    </header>
+    <div class="container flex">
+        <aside>
+            <ul>
+                <li><a id="home" class="" href="/">Hem</a></li>
+                <li><a id="razor" class="" href="/Razor">Razor</a></li>
+                <li><a id="about" class="" href="/About">Om sidan</a></li>
+            </ul>
+        </aside>
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div>Av: Amanda Hwatz Björkholm. Kontakta mig via e-post: <a href="mailto::amandahwatz@gmail.com">amandahwatz@gmail.com</a></div>
+    </footer>
 </div>
 
 <script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/be0f6fe16e.js" crossorigin="anonymous"></script>
 </body>
 </html>

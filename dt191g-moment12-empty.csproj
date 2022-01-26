@@ -7,4 +7,8 @@
         <RootNamespace>dt191g_moment12_empty</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\images" />
+    </ItemGroup>
+
 </Project>

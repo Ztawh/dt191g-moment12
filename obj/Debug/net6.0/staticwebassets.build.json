@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fDHytqkYtRf9RZMc4Bex/+vrc8+ippncTfUGXjqlQtE=",
+  "Hash": "OBkzregXafAvDtg/RqkwXZvZbvI5X9sQKOj8LY4wV7k=",
   "Source": "dt191g-moment12-empty",
   "BasePath": "_content/dt191g-moment12-empty",
   "Mode": "Default",
@@ -17,6 +17,23 @@
   ],
   "Assets": [
     {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/.DS_Store",
+      "SourceId": "dt191g-moment12-empty",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/",
+      "BasePath": "_content/dt191g-moment12-empty",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
       "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/css/_Base.scss",
       "SourceId": "dt191g-moment12-empty",
       "SourceType": "Discovered",
@@ -32,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/_Base.scss"
-    },
-    {
-      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/css/_Layout.scss",
-      "SourceId": "dt191g-moment12-empty",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/",
-      "BasePath": "_content/dt191g-moment12-empty",
-      "RelativePath": "css/_Layout.scss",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/_Layout.scss"
     },
     {
       "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/css/main.css",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/main.scss"
+    },
+    {
+      "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/images/memoji.png",
+      "SourceId": "dt191g-moment12-empty",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/",
+      "BasePath": "_content/dt191g-moment12-empty",
+      "RelativePath": "images/memoji.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/memoji.png"
     },
     {
       "Identity": "/Users/amanda/Documents/WebbutvecklingMIUN/RiderProjects/dt191g-moment12-empty/wwwroot/js/main.js",

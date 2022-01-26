@@ -1,4 +1,5 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300;1,400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,43 +8,160 @@
 
 body {
   line-height: 1.5;
-  background: antiquewhite;
+  font-family: Roboto, sans-serif;
+  background: #142425;
 }
 
 header {
-  padding: 3rem 2rem;
+  padding: 3rem 0 3rem 4rem;
+  background: linear-gradient(45deg, #2eead6, #59de4e);
+  position: relative;
+}
+
+#logo {
+  font-size: 5rem;
+}
+#logo a {
+  color: white;
 }
 
 #date {
-  margin-left: auto;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 main {
   padding: 1rem;
+  min-height: 70vh;
+  background: white;
+  width: 100%;
+}
+
+.super-container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h1 {
-  font-size: 4rem;
   margin: 0;
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
 }
 
 .flex {
   display: flex;
 }
 
+.active {
+  background: linear-gradient(45deg, #2eead6, #59de4e);
+  color: white;
+}
+
 aside {
-  border: solid 1px black;
   padding: 2rem;
+  background: #eee;
+  min-width: 300px;
 }
 aside ul {
   list-style-type: none;
-}
-aside ul li {
-  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 aside a {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
   padding: 0.5rem;
   text-decoration: none;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(45deg, #2eead6, #59de4e);
+  background: white;
+  transition: 0.2s;
+  color: black;
+}
+@media screen and (min-width: 900px) {
+  aside a:hover {
+    background: linear-gradient(45deg, #2eead6, #59de4e);
+    color: white;
+  }
+}
+
+ul {
+  list-style-position: inside;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+}
+footer a {
+  color: #06c0b0;
+}
+@media screen and (min-width: 900px) {
+  footer a:hover {
+    color: #26be17;
+  }
+}
+
+.text-container p {
+  margin-bottom: 1rem;
+  max-width: 700px;
+}
+
+#monday {
+  margin: 1rem 0;
+}
+
+.img-container {
+  max-width: 200px;
+  margin: 2rem auto;
+}
+.img-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    padding: 0.5rem;
+  }
+  aside ul {
+    display: flex;
+  }
+  aside ul li {
+    flex: 1;
+    margin: 5px;
+  }
+  aside ul li a {
+    padding: 0.2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  #logo {
+    margin: auto;
+  }
+
+  header {
+    padding: 4rem 1rem 1rem 1rem;
+  }
+
+  main {
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

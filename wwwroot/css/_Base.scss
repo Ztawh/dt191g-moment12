@@ -1,2 +1,28 @@
 // Normalize CSS
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,500;1,300;1,400&display=swap');
+
+$header: linear-gradient(45deg, #2eead6, #59de4e);
+$link: #06c0b0;
+$link-hover: #26be17;
+$body: #142425;
+
+// mixins
+@mixin desktop {
+  @media screen and (min-width: 900px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 700px){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 400px){
+    @content;
+  }
+}

@@ -1,6 +1,5 @@
+// Import partial
 @import "_Base";
-//@import "_Layout";
-
 
 * {
   margin: 0;
@@ -10,45 +9,182 @@
 
 body {
   line-height: 1.5;
-  background: antiquewhite;
+  font-family: Roboto, sans-serif;
+  background: $body;
 }
 
 header {
-  padding: 3rem 2rem;
+  padding: 3rem 0 3rem 4rem;
+  background: $header;
+  position: relative;
 }
 
+// White ghost
+#logo {
+  font-size: 5rem;
+  
+  a {
+    color: white;
+  }
+}
+
+// Date in header
 #date {
-  margin-left: auto;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 main {
   padding: 1rem;
+  min-height: 70vh;
+  background: white;
+  width: 100%;
+}
+
+// Wraps header and footer aswell
+.super-container {
+  max-width: 1200px;
+  margin: auto;
 }
 
 h1 {
-  font-size: 4rem;
   margin: 0;
+  font-size: 4rem;
+  font-family: "Bebas Neue", cursive;
 }
 
 .flex {
   display: flex;
 }
 
+// Active link
+.active {
+  background: linear-gradient(45deg, #2eead6, #59de4e);
+  color: white;
+}
+
+// Nav
 aside {
-  border: solid 1px black;
   padding: 2rem;
+  background: #eee;
+  min-width: 300px;
   
   ul {
     list-style-type: none;
-    
-    li {
-      text-align: center;
-    }
+    width: 100%;
+    margin: auto;
   }
   
+  // Link in nav
   a {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
     padding: 0.5rem;
     text-decoration: none;
-    //text-align: center;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(45deg, #2eead6, #59de4e);
+    background: white;
+    transition: 0.2s;
+    color: black;
+    
+    // Add hover effect
+    @include desktop {
+      &:hover {
+        background: linear-gradient(45deg, #2eead6, #59de4e);
+        color: white;
+      }
+    }
+  }
+}
+
+// Razor-page list
+ul {
+  list-style-position: inside;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  
+  // Link in footer
+  a {
+    color: $link;
+    
+    // Add hover effect
+    @include desktop {
+      &:hover {
+        color: $link-hover;
+      }
+    }
+  }
+}
+
+// Text on home-page and about
+.text-container {
+  p {
+    margin-bottom: 1rem;
+    max-width: 700px;
+  }
+}
+
+#monday {
+  margin: 1rem 0;
+}
+
+.img-container {
+  max-width: 200px;
+  margin: 2rem auto;
+  
+  img {
+    width: 100%;
+  }
+}
+
+// Smaller devices
+@include tablet {
+  .container {
+    flex-direction: column;
+  }
+  
+  aside {
+    padding: 0.5rem;
+    ul {
+      display: flex;
+
+      li {
+        flex: 1;
+        margin: 5px;
+        
+        a {
+          padding: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  #logo {
+    margin: auto;
+  }
+  
+  header {
+    padding: 4rem 1rem 1rem 1rem;
+  }
+  
+  main {
+    min-height: auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
   }
 }

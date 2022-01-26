@@ -3,8 +3,50 @@
 
 @{
     ViewData["Title"] = "Razor";
+    
+    // Get today's date
+    DateTime dateTime = DateTime.Now;
+    string date = dateTime.ToString("yyyy-MM-dd hh:mm:ss");
+    string day = dateTime.DayOfWeek.ToString();
+    
+    if (day == "Monday")
+    {
+        day = "måndag";
+    }
+    else
+    {
+        day = "inte måndag";
+    }
+    
+    // Courses
+    List<string> courses = new List<string>();
+    courses.Add("DT057G - Webbutveckling I");
+    courses.Add("DT084G - Intro till programmering i JavaScript");
+    courses.Add("GD008G - Typografi och form för webb");
+    courses.Add("DT163G - Digital bildbehandling för webb");
+    courses.Add("DT093G - Webbutveckling II");
+    courses.Add("DT003G - Databaser");
+    courses.Add("DT152G - Webbdesign för CMS");
+    courses.Add("DT068G - Webbanvändbarhet");
+    courses.Add("IK060G - Projektledning");
+    courses.Add("DT173G - Webbutveckling III");
+    courses.Add("DT071G - Programmering i C#.NET");
+    courses.Add("DT162G - Javascriptbaserad webbutveckling");
+    courses.Add("DT191G - Webbutveckling med .NET");
+    courses.Add("IG021G - Affärsplaner och kommersialisering");
+
 }
 
 <h1>Razor</h1>
+<h2>Information</h2>
 
-<p>Smått och gott</p>
+<div><b>Datum/klockslag: </b>@date</div>
+
+<div id="monday"><p>Idag är det @day.</p></div>
+
+<h3>Kurser jag läst</h3>
+<ul>
+    @foreach (var course in courses){
+        <li>@course</li>
+    }
+</ul>
